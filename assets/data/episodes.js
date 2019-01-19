@@ -43349,3 +43349,4 @@ const EPISODES = {
      }
   ]
 }
+window.episodes = EPISODES;
