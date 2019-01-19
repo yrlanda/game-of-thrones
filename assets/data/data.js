@@ -1,6 +1,7 @@
 const DATA = 
 {
     "characters":[
+       
        {
           "characterName":"Aeron Greyjoy",
           "houseName":"Greyjoy",
@@ -33,6 +34,8 @@ const DATA =
              "Arthur Dayne",
              "Jaime Lannister"
           ],
+
+          
           "parentOf":[
              "Daenerys Targaryen",
              "Rhaegar Targaryen",
@@ -3872,3 +3875,4 @@ const DATA =
        }
     ]
 }
+window.data = DATA;
