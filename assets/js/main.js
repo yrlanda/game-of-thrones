@@ -65,9 +65,9 @@ window.onload = () => {
         episodes.forEach(episode => {
             document.getElementById(episode.seasonNum).innerHTML += `<div class="card">
             <div class="card-body" >
-              <h5 class="card-title">#${episode.episodeNum} ${episode.episodeTitle} </h5>
+              <h5 class="card-title">Episodio ${episode.episodeNum}, <strong> "${episode.episodeTitle}"</strong> </h5>
               <p class="card-text">${episode.episodeDescription}</p>
-              <p class="card-text"><small class="text-muted">Air Date: ${episode.episodeAirDate}</small></p>
+              <p class="card-text"><small class="text-muted">Temporada ${episode.seasonNum}, Lanzamiento: ${episode.episodeAirDate}</small></p>
             </div>
           </div>`;
         })
