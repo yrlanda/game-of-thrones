@@ -80,10 +80,12 @@ window.onload = () => {
         characters_list.innerHTML = '';
 
         datos.forEach(character => {
-            characters_list.innerHTML += `<div class="card card-got text-center">
+            characters_list.innerHTML += `<div class="col-sm-2">
+            <div class="card card-got text-center">
     <img src="${character.characterImageFull}" class="card-img-top" alt="...">
     <div class="card-body card-name">
     <h5 class="card-title">${character.characterName}</h5>
+    </div>
     </div>
     </div`;
 

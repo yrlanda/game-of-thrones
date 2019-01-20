@@ -20,7 +20,9 @@ body {
   
   h3 {
     color: #fff;
-    text-align: center;  
+    text-align: center;
+    background-color: #282A2FA6; 
+    margin-top: 1%; 
 
   }
   .card-got {
