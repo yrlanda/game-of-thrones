@@ -24,7 +24,7 @@ body {
     text-align: center;
     background-color: #282A2FA6; 
     margin-top: 1%; 
-
+    
   }
   .card-got {
     width: 100%;
@@ -47,4 +47,11 @@ body {
     align-self: center;
     object-fit: cover;
   }
+  .footer {
+    color: #fff;
+    text-align: center;
+    background-color: #282A2FA6; 
+    margin-top: 1%; 
+   
+}
   
