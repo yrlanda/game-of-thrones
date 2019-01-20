@@ -45,17 +45,16 @@ window.onload = () => {
         seasons_list.innerHTML = '';
         datos.forEach(season => {
             seasons_list.innerHTML += `<div class="card">
-            <div class="card-header" id="heading${season}">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse${season}" aria-expanded="false"
-                  aria-controls="collapse${season}">
-                  Temporada ${season}
-                </button>
-              </h5>
+            <div class="card-header" role="tab" id="heading${season}">
+              <div class="mb-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse${season}" aria-expanded="false" aria-controls="collapse${season}" class="collapsed">
+                    <h3>Temporada ${season}</h3>
+                </a>
+              </div>
             </div>
-            <div id="collapse${season}" class="collapse" aria-labelledby="heading${season}" data-parent="#accordion">
-              <div class="card-body" id="${season}">
-                
+        
+            <div id="collapse${season}" class="collapse" role="tabpanel" aria-labelledby="heading${season}" aria-expanded="false" style="">
+              <div class="card-block" id="${season}">
               </div>
             </div>
           </div>`;
@@ -93,3 +92,25 @@ window.onload = () => {
     }
 }
 
+
+
+// function drawSeasonsList(datos, seasons_list) {
+//     seasons_list.innerHTML = '';
+//     datos.forEach(season => {
+//         seasons_list.innerHTML += `<div class="card">
+//         <div class="card-header" role="tab" id="heading${season}">
+//           <h5 class="mb-0">
+//             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse${season}" aria-expanded="false"
+//               aria-controls="collapse${season}">
+//               Temporada ${season}
+//             </button>
+//           </h5>
+//         </div>
+//         <div id="collapse${season}" class="collapse" aria-labelledby="heading${season}" data-parent="#accordion">
+//           <div class="card-body" id="${season}">
+            
+//           </div>
+//         </div>
+//       </div>`;
+//     });
+// }
