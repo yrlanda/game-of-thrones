@@ -1,11 +1,27 @@
 body {
     background-color: #020202;
+    background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/06/Game-of-Thrones-Wallpapers-HD-Background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: fill;
+
+  
 }
 .cintillo{
-    width: 100%;
+    width: 102%;
     height: 218px;
     /* object-fit: cover; */
     
+  }
+  .btn {
+    display: block;
+    width: 29%;
+    
+}
+  h3 {
+    color: #fff;
+    text-align: center;  
+
   }
   .card-got {
     width: 15%;
